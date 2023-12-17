@@ -1,0 +1,8 @@
+<!-- product-list.component.html -->
+
+<div *ngFor="let product of products">
+  <br />
+  <h2>{{ product.title }}</h2>
+  <!-- Link to view product detail -->
+  <a [routerLink]="['/products', product.id]">View Details</a>
+</div>

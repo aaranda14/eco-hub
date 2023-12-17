@@ -1,0 +1,10 @@
+<!-- product-create.component.html -->
+<form (ngSubmit)="onSubmit()">
+  <label for="title">Title:</label>
+  <input type="text" id="title" [(ngModel)]="product.title" name="title" required>
+
+  <label for="body">Body:</label>
+  <textarea id="body" [(ngModel)]="product.body" name="body" required></textarea>
+
+  <button type="submit">Create Post</button>
+</form>
